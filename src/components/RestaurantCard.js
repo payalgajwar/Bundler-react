@@ -2,6 +2,7 @@ import { CDN_URL } from "../utils/constants";
 
 const RestaurantCard = (props) => {
   const { resData } = props;
+  console.log(resData);
   const {
     name,
     cuisines,
@@ -13,6 +14,7 @@ const RestaurantCard = (props) => {
 
   return (
     <div
+      data-testid="resCard"
       className="border-black border-spacing-2 border-2 p-2 m-2 w-60 table"
       style={{ backgroundColor: "#f0f0f0" }}
     >
